@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT450 Sim.</title>
+    
+    
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+</head>
+<body>
+  
+    <div class="fueltech-submenu">
+        <div class="container">
+            <div class="menu-superior">
+                <h6 class="proxima-pagina">&#5176;</h6>
+                <h6 class="submenu-head">COMPENSAÇÃO POR ROTAÇÃO</h6>
+                <h6 class="pagina-anterior">&#5171;</h6>
+            </div>
+            <div class="injecao-tabela">
+                <div class="canvas"> 
+                    <canvas id="canvas" width="600" height="180px"></canvas>
+                </div>
+                <div class="controles-inferior">
+                    <div class="controles-laterais esquerda">
+                        <button id="itemAnterior"><</button>   
+                    </div>
+                    <div class="controles">
+                        <div class="controles-valores">
+                            <button id="diminuiValor"class="valor-negativo" >-</button>
+                            <h6 id="valorAtual" class="valor-inserido"></h6>
+                            <button id="acrescentaValor" class="valor-positivo">+</button>                        
+                        </div>
+                        <h6 class="valor-atual" id="valorSelecionado"></h6>
+                    </div>
+                    <div class="controles-laterais direita">
+                        <button id="itemSeguinte">></button>   
+                    </div>
+                </div>
+            </div>
+            <div class="menu-inferior">
+                <a href="./injecaoSubMenu.html"class="cancelar">CANCELAR</a>
+                <a href="../index.html"class="retornar">RETONAR DASHBOARD</a>
+                <a class="confirma">CONFIRMA</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/index.js"></script>
+    <h6 id="compensacaoRotacao"></h6>
+    
+</body>
+</html>
